@@ -74,6 +74,4 @@ let step = () => {
 };
 
 step();
-document.documentElement.ontouchstart = function() {
-  return false;
-};
+document.documentElement.style = "overflow:hidden";
