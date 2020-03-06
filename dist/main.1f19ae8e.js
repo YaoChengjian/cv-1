@@ -151,7 +151,6 @@ var step = function step() {
 };
 
 step();
-document.documentElement.style = "overflow:hidden";
 },{}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

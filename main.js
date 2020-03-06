@@ -74,4 +74,3 @@ let step = () => {
 };
 
 step();
-document.documentElement.style = "overflow:hidden";
