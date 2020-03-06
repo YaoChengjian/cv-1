@@ -2,8 +2,8 @@ let demo = document.getElementById("demo");
 let divWidth = document.getElementById("divWidth");
 let style = document.getElementsByTagName("style")[0];
 let string1 = `
-/*你好，我叫姚成健
-*接下来我演示一下我的前端功底
+/*你好！
+*给你画个太极劈一下邪吧！
 *首先我要准备一个div
 */
 #div1{
@@ -74,3 +74,7 @@ let step = () => {
 };
 
 step();
+
+document.documentElement.ontouchstart = document.documentElement.ontouchmove = function() {
+  return false;
+};
