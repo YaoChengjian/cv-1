@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var demo = document.getElementById("demo");
 var divWidth = document.getElementById("divWidth");
 var style = document.getElementsByTagName("style")[0];
-var string1 = "\n/*\u4F60\u597D\uFF01\n*\u7ED9\u4F60\u753B\u4E2A\u592A\u6781\u5288\u4E00\u4E0B\u90AA\u5427\uFF01\n*\u9996\u5148\u6211\u8981\u51C6\u5907\u4E00\u4E2Adiv\n*/\n#div1{\n    border:1px solid red;\n    width:200px;\n    height:200px;\n}\n/*\u63A5\u4E0B\u6765\u6211\u628Adiv\u53D8\u6210\u4E00\u4E2A\u516B\u5366\u56FE\n*\u6CE8\u610F\u770B\u597D\u4E86\n*\u9996\u5148\uFF0C\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706\n*/\n#div1{\n    border-radius:50%;\n    box-shadow:0 0 3px rgba(0,0,0,0.5);\n    border:none;\n}\n/*\u516B\u5366\u662F\u9634\u9633\u5F62\u6210\u7684\n*\u4E00\u9ED1\u4E00\u767D\n*/\n#div1{\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#div1::before{\n    content:\"\";\n    position:absolute;\n    width:100px;\n    height:100px;\n    border-radius:50%;\n    left:25%;\n    background:black;\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);\n}\n#div1::after{\n    content:\"\";\n    position:absolute;\n    width:100px;\n    height:100px;\n    border-radius:50%;\n    left:25%;\n    bottom:0;\n    background:white;\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);\n}\n";
+var string1 = "\n/*\u4F60\u597D\uFF01\n*\u7ED9\u4F60\u753B\u4E2A\u592A\u6781\u5288\u4E00\u4E0B\u90AA\u5427\uFF01\n*\u9996\u5148\u51C6\u5907\u4E00\u4E2Adiv\n*/\n#div1{\n    border:1px solid red;\n    width:200px;\n    height:200px;\n}\n/*\u5728\u53D8\u6210\u5706\n*\n*\u5728\u6839\u636E\u6837\u5F0F\u8FDB\u884C\u8C03\u6574\n*/\n#div1{\n    border-radius:50%;\n    box-shadow:0 0 3px rgba(0,0,0,0.5);\n    border:none;\n}\n/*\u516B\u5366\u662F\u9634\u9633\u5F62\u6210\u7684\n*\u4E00\u9ED1\u4E00\u767D\n*/\n#div1{\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#div1::before{\n    content:\"\";\n    position:absolute;\n    width:100px;\n    height:100px;\n    border-radius:50%;\n    left:25%;\n    background:black;\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);\n}\n#div1::after{\n    content:\"\";\n    position:absolute;\n    width:100px;\n    height:100px;\n    border-radius:50%;\n    left:25%;\n    bottom:0;\n    background:white;\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%);\n}\n";
 var n = -1;
 var string2 = "";
 
@@ -152,7 +152,7 @@ var step = function step() {
 
 step();
 
-document.documentElement.ontouchstart = document.documentElement.ontouchmove = function () {
+document.documentElement.ontouchstart = function () {
   return false;
 };
 },{}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

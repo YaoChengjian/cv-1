@@ -4,16 +4,16 @@ let style = document.getElementsByTagName("style")[0];
 let string1 = `
 /*你好！
 *给你画个太极劈一下邪吧！
-*首先我要准备一个div
+*首先准备一个div
 */
 #div1{
     border:1px solid red;
     width:200px;
     height:200px;
 }
-/*接下来我把div变成一个八卦图
-*注意看好了
-*首先，把div变成一个圆
+/*在变成圆
+*
+*在根据样式进行调整
 */
 #div1{
     border-radius:50%;
@@ -74,7 +74,6 @@ let step = () => {
 };
 
 step();
-
-document.documentElement.ontouchstart = document.documentElement.ontouchmove = function() {
+document.documentElement.ontouchstart = function() {
   return false;
 };
